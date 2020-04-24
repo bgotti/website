@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.navy {
+  color: rgba(3,39,93,1);
+}
+
+/* Nav */
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0,0,0,.9);
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-nav .dropdown-menu {
+  max-width: 400px;
+}
+
+/* Cover */
+
+.coverimage {
+  margin-bottom: 3em;
+}
+
+/* General */
+
+.jumbotron {
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background-image: radial-gradient( circle 900px at 10.3% 17%,  rgba(3,39,93,1) 0%, rgba(33,39,93,1) 90% );
+}
+
+section {
+  padding: 4em 1em;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.div-center {
+  margin: 0 auto;
+}
+
+.btn-primary, .btn-outline-primary {
+  background-image: radial-gradient( circle 900px at 10.3% 17%,  rgba(3,39,93,1) 0%, rgba(33,39,93,1) 90% );
+  color: #fff;
+  border: 1px rgba(3,39,93,1) solid;
+  box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2)
+}
+
+.fas {
+  border-radius: 12px;
+}
+
+/* About */
+
+.description {
+  line-height: 2;
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 2em;
+}
+
+.social {
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Skills */
+
+.sign {
+  font-size: 5em;
+  background-color: #f8f9fa;
+  padding: 20px;
+  color: rgba(3,39,93,1);
+}
+
+.icon {
+  font-size: 10em;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: 0px 1px 27px -3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: none;
+}
+
+.orange {
+  color: #FF7F50;
+}
+
+.blue {
+  color: #1E90FF;
+}
+
+.yellow {
+  color: #ffcd00;
+}
+
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills p{
+  text-align: left;
+}
+
+/* Contact*/
+
+.contact {
+  background-color: #f8f9fa;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 2em;
+  color: #fff;
+  background-image: radial-gradient( circle 900px at 10.3% 17%,  rgba(3,39,93,1) 0%, rgba(33,39,93,1) 90% );
+}
+
+
+footer a {
+  color: #e9ecef;
+}
+
+/* Privacy */
+
+.privacy ul {
+  list-style-type: none;
+}
+
+.privacy {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+}
+
+.privacy h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.privacy h2 {
+  margin-bottom: 1em;
+}
+
+/* Privacy */
+
+/* 404 Not Found*/
+
+/* 404 Not Found*/
+
+.terms {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+}
+
+.terms h1 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.terms h2 {
+  margin-bottom: 1em;
+}
+
+/* Terms */
+
+/* Footer id*/
+
+#footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* Footer id*/
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .navbar-toggler {
+    padding: 0;
+  }
+
+  .display-4 {
+    font-size: 2.2em;
+  }
+
+  .lead {
+    font-size: 1em;
+  }
+
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .description {
+    font-size: 1em;
+  }
+
+  section {
+    padding: 2em 1em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+}
