@@ -42,7 +42,7 @@ html {
   text-align: center;
   align-items: center;
   color: #fff;
-  background-image: radial-gradient( circle 900px at 10.3% 17%,  rgba(3,39,93,1) 0%, rgba(33,39,93,1) 90% );
+  background: radial-gradient( circle 900px at 10.3% 17%,  rgba(3,39,93,1) 0%, rgba(33,39,93,1) 90% );
 }
 
 section {
