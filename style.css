@@ -66,6 +66,7 @@ ul:not(.nav-list):not(.footer-nav) li::before {
 .header-content {
   justify-content: space-between;
   padding: var(--spacing) 0;
+  position: relative;
 }
 .site-header {
   background: var(--primary-color);
@@ -87,6 +88,7 @@ ul:not(.nav-list):not(.footer-nav) li::before {
   background: none;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 .nav-list {
   list-style: none;
@@ -101,6 +103,10 @@ ul:not(.nav-list):not(.footer-nav) li::before {
   padding: var(--spacing);
   display: block;
   transition: background var(--transition-speed);
+}
+
+.nav-list li {
+  text-align: center;
 }
 .nav-list a.active,
 .nav-list a:hover {
@@ -246,11 +252,19 @@ button[type="submit"]:hover {
 @media (max-width: 600px) {
   .nav-list {
     flex-direction: column;
-    display: none;
+    gap: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
     background: var(--primary-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-speed) ease;
   }
   .nav-list.show {
-    display: block;
+    max-height: 300px;
+    padding: var(--spacing) 0;
   }
   .nav-toggle {
     display: block;
