@@ -9,7 +9,16 @@
 
   if (navToggle) {
     navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
       navList.classList.toggle('show');
+    });
+
+    navList.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('show');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
     });
   }
 
