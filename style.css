@@ -37,6 +37,22 @@ h3 {
   font-family: "Inter", "Poppins", sans-serif;
   font-weight: 600;
 }
+ul:not(.nav-list):not(.footer-nav) {
+  list-style: none;
+  padding-left: 0;
+}
+ul:not(.nav-list):not(.footer-nav) li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+ul:not(.nav-list):not(.footer-nav) li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
 .container {
   max-width: var(--max-width);
   width: 100%;
