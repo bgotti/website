@@ -1,0 +1,136 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --light-color: #ecf0f1;
+  --dark-color: #34495e;
+  --max-width: 960px;
+  --spacing: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.header-content {
+  justify-content: space-between;
+  padding: var(--spacing) 0;
+}
+.site-header {
+  background: var(--primary-color);
+  color: #fff;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+}
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.site-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: var(--spacing);
+  display: block;
+}
+.site-nav a.active,
+.site-nav a:hover {
+  background: var(--secondary-color);
+}
+main {
+  padding: var(--spacing) 0;
+}
+.site-footer {
+  background: var(--primary-color);
+  color: #fff;
+  padding: var(--spacing) 0;
+  margin-top: var(--spacing);
+}
+.footer-nav {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 var(--spacing);
+}
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: var(--spacing);
+}
+input, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+button[type="submit"] {
+  margin-top: var(--spacing);
+  padding: 0.75rem;
+  background: var(--secondary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  background: var(--dark-color);
+}
+@media (max-width: 600px) {
+  .site-nav ul {
+    flex-direction: column;
+    display: none;
+    background: var(--primary-color);
+  }
+  .site-nav ul.show {
+    display: block;
+  }
+  .nav-toggle {
+    display: block;
+  }
+}

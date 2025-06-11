@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
   <meta http-equiv="X-Content-Type-Options" content="nosniff">
-  <title>Home - Demo Site</title>
+  <title>Contact Us - Demo Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
@@ -25,8 +25,17 @@
     </div>
   </header>
   <main class="container">
-    <h1>Welcome to Our Website</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+    <h1>Contact Us</h1>
+    <form id="contact-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-status" role="alert" aria-live="polite"></p>
   </main>
   <footer class="site-footer">
     <div class="container flex footer-content">
