@@ -31,6 +31,16 @@ body {
   flex-direction: column;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3 {
@@ -65,7 +75,7 @@ ul:not(.nav-list):not(.footer-nav) li::before {
 }
 .header-content {
   justify-content: space-between;
-  padding: var(--spacing) 0;
+  padding: var(--spacing);
   position: relative;
 }
 .site-header {
@@ -150,7 +160,7 @@ main {
 }
 
 .features {
-  padding: var(--section-padding) 0;
+  padding: var(--section-padding) 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
@@ -275,6 +285,10 @@ button[type="submit"]:hover {
   }
   .footer-nav {
     flex-direction: column;
+  }
+
+  .site-nav {
+    display: contents;
   }
 }
 @keyframes fade-in {
