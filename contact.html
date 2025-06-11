@@ -29,12 +29,19 @@
   </header>
   <main class="container">
     <h1>Contact Us</h1>
-    <p>If you have questions about our services or want to discuss a project, send us a message and we’ll respond shortly.</p>
+    <p>If you have questions about our services or want to discuss a project, reach out using the details below or send us a message.</p>
+    <address class="contact-info">
+      <p>Email: <a href="mailto:support@payflow.test">support@payflow.test</a></p>
+      <p>Phone: <a href="tel:+18005551234">1-800-555-1234</a></p>
+      <p>Address: 123 Commerce St, Suite 100, San Francisco, CA 94103</p>
+    </address>
     <form id="contact-form" novalidate>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="5" required></textarea>
       <button type="submit">Send</button>
