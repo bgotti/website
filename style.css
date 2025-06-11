@@ -6,7 +6,7 @@
   --text-color: #1f2937;
   --max-width: 1100px;
   --spacing: 1rem;
-  --section-padding: 4rem;
+  --section-padding: 3rem;
   --radius: 0.5rem;
   --transition-speed: 0.3s;
 }
@@ -24,6 +24,9 @@ body {
   line-height: 1.6;
   background: var(--bg-color);
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -64,21 +67,22 @@ h1, h2, h3 {
   border: none;
   color: #fff;
 }
-.site-nav ul {
+.nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
+  gap: var(--spacing);
 }
-.site-nav a {
+.nav-list a {
   color: #fff;
   text-decoration: none;
   padding: var(--spacing);
   display: block;
   transition: background var(--transition-speed);
 }
-.site-nav a.active,
-.site-nav a:hover {
+.nav-list a.active,
+.nav-list a:hover {
   background: var(--secondary-color);
 }
 .hero {
@@ -111,13 +115,14 @@ h1, h2, h3 {
 }
 main {
   padding: var(--spacing) 0;
+  flex: 1;
 }
 
 .features {
   padding: var(--section-padding) 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   text-align: center;
 }
 
@@ -136,6 +141,12 @@ main {
   color: #fff;
   padding: var(--spacing) 0;
   margin-top: var(--spacing);
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing);
   text-align: center;
 }
 .footer-nav {
@@ -177,6 +188,12 @@ form {
 label {
   margin-top: var(--spacing);
 }
+.contact-info p {
+  margin: 0.25rem 0;
+}
+.contact-info a {
+  color: inherit;
+}
 input, textarea {
   padding: 0.5rem;
   font-size: 1rem;
@@ -198,16 +215,23 @@ button[type="submit"]:hover {
   background: #2563eb;
 }
 @media (max-width: 600px) {
-  .site-nav ul {
+  .nav-list {
     flex-direction: column;
     display: none;
     background: var(--primary-color);
   }
-  .site-nav ul.show {
+  .nav-list.show {
     display: block;
   }
   .nav-toggle {
     display: block;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-nav {
+    flex-direction: column;
   }
 }
 @keyframes fade-in {

@@ -38,10 +38,11 @@
       e.preventDefault();
       const name = sanitize(form.name.value.trim());
       const email = sanitize(form.email.value.trim());
+      const subject = sanitize(form.subject.value.trim());
       const message = sanitize(form.message.value.trim());
       const status = document.getElementById('form-status');
 
-      if (!name || !email || !message) {
+      if (!name || !email || !subject || !message) {
         status.textContent = 'Please fill in all fields.';
         status.style.color = 'red';
         return;
